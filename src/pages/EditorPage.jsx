@@ -6,12 +6,9 @@ const EditorPage = () => {
   const [sections, setSections] = useState([]);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-green-500">
       <div className="w-full lg:w-1/2 p-6">
         <ResumeEditor sections={sections} setSections={setSections} />
-      </div>
-      <div className="w-full lg:w-1/2 p-6 bg-white">
-        <LivePreview sections={sections} />
       </div>
     </div>
   );
